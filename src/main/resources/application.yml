@@ -15,10 +15,17 @@ spring:
       ddl-auto: update
     show-sql: true
 
+openapi:
+  service:
+    title: user-service doc
+    version: 1.0.0
+    url: http://localhost:8080 #Gateway
+
 springdoc:
   api-docs:
-    path: /api-docs
+    path: /users-service/v3/api-docs
   swagger-ui:
+    path: /users-service/swagger-ui.html
     enabled: true
 
 eureka:
